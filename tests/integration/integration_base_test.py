@@ -12,6 +12,9 @@ from db import db
 
 
 class BaseTest(TestCase):
+    def setUpClass(cls):
+        pass
+
     def setUp(self):
         # Make sure database exists
         app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'
